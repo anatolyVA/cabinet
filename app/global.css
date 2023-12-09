@@ -11,12 +11,16 @@ body {
     --primary-default: #1a3bb0;
     --primary-hover: #425dbe;
 
+    --tonal: rgba(66, 93, 190, 0.10);
+
     --violet-color: #801AB0;
     --green-color: #2B8829;
     --red-color: #A61A1A;
     --yellow-color: #B0AA1A;
 
     --background-color: #f0f1f4;
+
+    --frame-stroke: rgba(0, 0, 0, 10%);
 
     --fontsize_display: 3rem;
     --fontsize_headline: 1.5rem;
@@ -32,6 +36,8 @@ body {
     --p4: 24px;
     --p5: 32px;
     --p6: 48px;
+
+
 }
 
 h1 {
