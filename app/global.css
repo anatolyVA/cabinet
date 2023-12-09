@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+}
+:root {
+    --primary-default: #1a3bb0;
+    --primary-hover: #425dbe;
+
+    --violet-color: #801AB0;
+    --green-color: #2B8829;
+    --red-color: #A61A1A;
+    --yellow-color: #B0AA1A;
+
+    --background-color: #f0f1f4;
+
+    --fontsize_display: 3rem;
+    --fontsize_headline: 1.5rem;
+    --fontsize_title: 1.25rem;
+    --fontsize_body: 1rem;
+    --fontsize_label_l: 0.875rem;
+    --fontsize_label_m: 0.75rem;
+    --fontsize_label_s: 0.625rem;
+
+    --p1: 4px;
+    --p2: 8px;
+    --p3: 16px;
+    --p4: 24px;
+    --p5: 32px;
+    --p6: 48px;
+}
+
+h1 {
+    font-size: var(--fontsize_display);
+    font-weight: bold;
+}
+h2 {
+    font-size: var(--fontsize_headline);
+    font-weight: bold;
+}
+h3 {
+  font-size: var(--fontsize_title);
+  font-weight: bold;
+}
+h4 {
+  font-size: var(--fontsize_title);
+  font-weight: bold;
+}
+
+.font_body {
+  font-size: var(--fontsize_body);
+  font-weight: 400;
+}
+
+.font_label_m {
+  font-size: var(--fontsize_label_m);
+  font-weight: 400;
+}
+
+.font_label_l {
+  font-size: var(--fontsize_label_l);
+  font-weight: 400;
+}
+
+.font_label_l {
+  font-size: var(--fontsize_label_s);
+  font-weight: 400;
+}
+
+
+.font__dulled {
+  color: rgba(0, 0, 0, 40%);
+}
+
+.font__bold {
+  font-weight: bold;
+}
+.font__uppercase {
+  text-transform: uppercase;
+}

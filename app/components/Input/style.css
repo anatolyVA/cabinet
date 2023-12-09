@@ -1,0 +1,19 @@
+.input {
+    border: 1px solid rgba(0, 0, 0, 10%);
+    border-radius: 24px;
+    padding: var(--p3) var(--p4);
+    font-size: var(--fontsize_label_l);
+}
+
+.input:focus-visible {
+    outline: 1px solid var(--primary-hover);
+    outline-color: 10%;
+}
+.input:focus {
+    outline: 1px solid var(--primary-hover);
+    outline-color: 10%;
+}
+
+input::placeholder {
+    font-size: var(--fontsize_label_l);
+}

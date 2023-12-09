@@ -1,95 +1,56 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Button from "./components/Button";
+import CheckBox from "./components/CheckBox";
+import Input from "./components/Input";
+import "./page.css";
+import Community from "Community.png";
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+export default function Auth() {
+    return (
+        <div className="auth_page">
+            <div className="form_frame">
+                <img className="image_community" src="Community.png"></img>
+                <img className="image_teacher" src="Teacher.png"></img>
+                <form className="form">
+                    <div className="form_header">
+                        <h1>Вход</h1>
+                        <span className="font_body font__bold font__dulled">
+                            Заполните форму, чтобы войти в личный кабинет
+                        </span>
+                    </div>
+                    <div className="form_group">
+                        <Input
+                            placeholder="Введите логин"
+                            className="input"
+                        ></Input>
+                        <Input
+                            type="password"
+                            placeholder="Введите пароль"
+                            className="input"
+                        ></Input>
+                        <CheckBox
+                            labelClassname="font_label_m font__dulled"
+                            id="d"
+                            label="Запомнить меня"
+                        />
+                    </div>
+
+                    <Button
+                        width="100%"
+                        className="button button_medium button_filled"
+                    >
+                        Войти
+                    </Button>
+                </form>
+            </div>
+            <div className="scenery_frame">
+                <div className="form_header">
+                    <h1>Добро пожаловать!</h1>
+                    <span className="font_body font__bold font__dulled">
+                        Заполните форму, чтобы войти в личный кабинет
+                    </span>
+                </div>
+                <img src="OnlineTest.png"></img>
+            </div>
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    );
 }

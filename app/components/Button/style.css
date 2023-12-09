@@ -1,0 +1,83 @@
+.button {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    background: none;
+    border: none;
+    appearance: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 300ms ease-in;
+    user-select: none;
+}
+.button:disabled{
+    opacity: 0.5;
+    cursor: default;
+}
+
+.button_filled {
+    border: none;
+    background-color: var(--primary-default);
+}
+.button_filled:hover {
+    background-color: var(--primary-hover);
+}
+.button_filled:active {
+    background-color: var(--primary-active);
+}
+
+.button_outlined {
+    border: 2px solid var(--primary-default);
+    background-color: none;
+    color: var(--primary-default);
+}
+.button_outlined:hover {
+    border-color: var(--primary-hover);
+    background-color: var(--primary-hover);
+    color: white;
+}
+.button_outlined:active {
+    border-color: var(--primary-active);
+    background-color: var(--primary-active);
+}
+
+.button_text {
+    background-color: transparent;
+    color: rgba(0, 0, 0, 1);
+}
+.button_text:hover {
+    background-color: var(--primary-textbtn-hover);
+    color: black;
+}
+.button_text:active {
+    background-color: var(--primary-textbtn-active);
+    color: white;
+}
+
+.button_tonal {
+    background: var(--primary-tonalbtn-default);
+    color: black;
+}
+.button_tonal:hover {
+    background: var(--primary-tonalbtn-hover);
+}
+.button_tonal:active {
+    background: var(--primary-tonalbtn-active);
+    color: white;
+}
+
+.button_small {
+    border-radius: 16px;
+    height: 32px;
+    padding: 0px var(--p3);
+    gap: 8px;
+    font-size: var(--font_label_m);
+}
+.button_medium {
+    border-radius: 24px;
+    height: 48px;
+    gap: 8px;
+    padding: 0px var(--p4);
+    font-size: var(--font_label_l);
+}
