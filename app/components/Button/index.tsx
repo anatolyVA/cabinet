@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import Link from "next/link";
 
 type Props = {
     children?: React.ReactNode;
@@ -11,12 +12,12 @@ type Props = {
 };
 
 function Button({ width, children, className, onClick, disabled, ...attrs }: Props) {
-    const Tag = attrs.href ? "a" : "button";
+    const Tag = attrs.href ? {Link} : "button";
 
     return (
-        <Tag style={{width: width}} className={className} disabled={disabled} onClick={onClick}>
+        <button style={{width: width}} className={className} disabled={disabled} onClick={onClick}>
             {children}
-        </Tag>
+        </button>
     );
 }
 

@@ -1,4 +1,5 @@
 * {
+    font-family: Geologica;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -11,12 +12,12 @@ body {
     --primary-default: #1a3bb0;
     --primary-hover: #425dbe;
 
-    --tonal: rgba(66, 93, 190, 0.10);
+    --tonal: rgba(66, 93, 190, 0.1);
 
-    --violet-color: #801AB0;
-    --green-color: #2B8829;
-    --red-color: #A61A1A;
-    --yellow-color: #B0AA1A;
+    --violet-color: #801ab0;
+    --green-color: #2b8829;
+    --red-color: #a61a1a;
+    --yellow-color: #b0aa1a;
 
     --background-color: #f0f1f4;
 
@@ -36,8 +37,6 @@ body {
     --p4: 24px;
     --p5: 32px;
     --p6: 48px;
-
-
 }
 
 h1 {
@@ -49,42 +48,48 @@ h2 {
     font-weight: bold;
 }
 h3 {
-  font-size: var(--fontsize_title);
-  font-weight: bold;
+    font-size: var(--fontsize_title);
+    font-weight: bold;
 }
 h4 {
-  font-size: var(--fontsize_title);
-  font-weight: bold;
+    font-size: var(--fontsize_title);
+    font-weight: bold;
 }
 
 .font_body {
-  font-size: var(--fontsize_body);
-  font-weight: 400;
+    font-size: var(--fontsize_body);
+    font-weight: 400;
 }
 
 .font_label_m {
-  font-size: var(--fontsize_label_m);
-  font-weight: 400;
+    font-size: var(--fontsize_label_m);
+    font-weight: 400;
 }
 
 .font_label_l {
-  font-size: var(--fontsize_label_l);
-  font-weight: 400;
+    font-size: var(--fontsize_label_l);
+    font-weight: 400;
 }
 
-.font_label_l {
-  font-size: var(--fontsize_label_s);
-  font-weight: 400;
+.font_label_s {
+    font-size: var(--fontsize_label_s);
+    font-weight: 400;
 }
-
 
 .font__dulled {
-  color: rgba(0, 0, 0, 40%);
+    color: rgba(0, 0, 0, 40%);
+}
+.font__light_dulled {
+    color: rgba(255, 255, 255, 40%);
 }
 
 .font__bold {
-  font-weight: bold;
+    font-weight: bold;
 }
 .font__uppercase {
-  text-transform: uppercase;
+    text-transform: uppercase;
+}
+
+hr {
+    border-top: var(--frame-stroke);
 }

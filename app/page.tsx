@@ -3,21 +3,22 @@ import CheckBox from "./components/CheckBox";
 import Input from "./components/Input";
 import "./page.css";
 import Community from "Community.png";
+import Link from "next/link";
 
-export default function Auth() {
+export default function Page() {
     return (
         <div className="auth_page">
-            <div className="form_frame">
+            <section className="form_frame">
                 <img className="image_community" src="Community.png"></img>
                 <img className="image_teacher" src="Teacher.png"></img>
                 <form className="form">
-                    <div className="form_header">
+                    <header className="form_header">
                         <h1>Вход</h1>
                         <span className="font_body font__bold font__dulled">
                             Заполните форму, чтобы войти в личный кабинет
                         </span>
-                    </div>
-                    <div className="form_group">
+                    </header>
+                    <main className="form_group">
                         <Input
                             placeholder="Введите логин"
                             className="input"
@@ -32,25 +33,25 @@ export default function Auth() {
                             id="d"
                             label="Запомнить меня"
                         />
-                    </div>
+                    </main>
 
-                    <Button
-                        width="100%"
+                    <Link
+                        href="/dashboard"
                         className="button button_medium button_filled"
                     >
                         Войти
-                    </Button>
+                    </Link>
                 </form>
-            </div>
-            <div className="scenery_frame">
-                <div className="form_header">
+            </section>
+            <section className="scenery_frame">
+                <header className="form_header">
                     <h1>Добро пожаловать!</h1>
                     <span className="font_body font__bold font__dulled">
                         Заполните форму, чтобы войти в личный кабинет
                     </span>
-                </div>
+                </header>
                 <img src="OnlineTest.png"></img>
-            </div>
+            </section>
         </div>
     );
 }

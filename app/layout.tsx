@@ -1,6 +1,7 @@
 import './global.css'
 import type { Metadata } from "next";
 import { Geologica, Inter } from "next/font/google";
+import SideBar from './components/SideBar';
 
 const geologica = Geologica({subsets: ["cyrillic"]})
 

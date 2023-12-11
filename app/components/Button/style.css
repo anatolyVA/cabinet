@@ -1,30 +1,48 @@
 .button {
+    display: flex;
     cursor: pointer;
     text-decoration: none;
+    appearance: none;
     color: white;
     background: none;
-    border: none;
-    appearance: none;
-    display: inline-flex;
+    border: transparent;
     align-items: center;
     justify-content: center;
-    transition: background-color 300ms ease-in;
+    transition: 200ms ease-in;
     user-select: none;
 }
 .button:disabled{
-    opacity: 0.5;
-    cursor: default;
+    opacity: 0.2;
+    cursor: not-allowed;
+    pointer-events: none;
 }
 
 .button_filled {
-    border: none;
+    border: transparent;
     background-color: var(--primary-default);
 }
 .button_filled:hover {
     background-color: var(--primary-hover);
 }
 
+.button_sidebar {
+    border: transparent;
+    opacity: 0.4;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: none;
+    color: #000;
+}
+.button_sidebar:hover {
+    opacity: 1;
+    background: rgba(66, 93, 190, 0.10);
+}
+.button_sidebar.active {
+    opacity: 1;
+    background: rgba(66, 93, 190, 0.20);
+}
 .button_outlined {
+    opacity: 1;
     border: 1px solid var(--frame-stroke);
     background-color: none;
     color: black;
@@ -43,17 +61,36 @@
 }
 
 
-.button_small {
+.button_small{
     border-radius: 16px;
     height: 32px;
     padding: 0px var(--p3);
     gap: 8px;
-    font-size: var(--font_label_m);
+    font-size: var(--fontsize_label_m);
+
 }
-.button_medium {
+.button_medium{
     border-radius: 24px;
     height: 48px;
     gap: 8px;
     padding: 0px var(--p4);
-    font-size: var(--font_label_l);
+    font-size: var(--fontsize_label_l);
+    
+}
+
+.button_icon_medium {
+    border-radius: 24px;
+    height: 48px;
+    width: 48px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+.button_icon_small {
+    border-radius: 24px;
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
 }
