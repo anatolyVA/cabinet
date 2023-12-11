@@ -3,15 +3,23 @@ import "./style.css";
 import { User } from "@phosphor-icons/react";
 
 type Props = {
-    size: number;
+  size: number;
+  src?: string;
 };
 
-function Avatar({ size }: Props) {
-    return (
-        <div style={{ width: size, height: size }} className="avatar">
-            <User size={size / 2.5} />
-        </div>
-    );
+function Avatar({ src, size }: Props) {
+  return (
+    <div
+      style={{ minWidth: size, minHeight: size, width: size, height: size }}
+      className="avatar"
+    >
+      {/* {src ? (
+        <Image src={src} height={300} width={300} alt="avatar" />
+      ) : (
+        <User size={size / 2.5} />
+      )} */}
+    </div>
+  );
 }
 
 export default Avatar;

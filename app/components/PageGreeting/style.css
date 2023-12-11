@@ -1,45 +1,44 @@
 .page_greeting {
-    display: grid;
-    grid-template-columns: 80% 20%;
-    height: 150px;
-    padding: var(--p5);
-    border-radius: 24px;
-    width: 100%;
-    border: 1px solid var(--frame-stroke);
-    background: linear-gradient(92deg, #801AB0 0%, #1A3BB0 100%);
-    color: #FFF;
-    
+  display: grid;
+  grid-template-columns: 80% 20%;
+  height: 150px;
+  padding: var(--p5);
+  border-radius: 24px;
+  width: 100%;
+  border: 1px solid var(--frame-stroke);
+  background: linear-gradient(92deg, #801ab0 0%, #1a3bb0 100%);
+  color: #fff;
 }
 .page_greeting_left {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 .notifications {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 .notification {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
 }
 
 .notifications__none {
-    display: none;
+  display: none;
 }
 
 .page_greeting_right {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: relative;
+  gap: 8px;
 }
 .image_exams {
-    position: relative;
-    bottom: 25px;
-    right: 140px;
-    
+  position: absolute;
+  bottom: -32px;
+  right: 120px;
 }

@@ -35,7 +35,7 @@ function PageGreeting() {
                 </main>
             </section>
             <section className="page_greeting_right">
-                <span className="font_body">20 декабря, 2023 г.</span>
+                <span className="font_body font_text-nowrap">20 декабря, 2023 г.</span>
                 <span className="font_body font__bold font__light_dulled">
                     Среда
                 </span>

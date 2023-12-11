@@ -1,95 +1,104 @@
 * {
-    font-family: Geologica;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  font-family: Geologica;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-body {
-    min-height: 100vh;
+:root,
+body,
+html {
+  min-height: 100%;
+  width: 100vw;
 }
+
 :root {
-    --primary-default: #1a3bb0;
-    --primary-hover: #425dbe;
+  --primary-default: #1a3bb0;
+  --primary-hover: #425dbe;
 
-    --tonal: rgba(66, 93, 190, 0.1);
+  --tonal: rgba(66, 93, 190, 0.1);
 
-    --violet-color: #801ab0;
-    --green-color: #2b8829;
-    --red-color: #a61a1a;
-    --yellow-color: #b0aa1a;
+  --violet-color: #801ab0;
+  --green-color: #2b8829;
+  --red-color: #a61a1a;
+  --yellow-color: #b0aa1a;
 
-    --background-color: #f0f1f4;
+  --background-color: #f0f1f4;
 
-    --frame-stroke: rgba(0, 0, 0, 10%);
+  --frame-stroke: rgba(0, 0, 0, 10%);
 
-    --fontsize_display: 3rem;
-    --fontsize_headline: 1.5rem;
-    --fontsize_title: 1.25rem;
-    --fontsize_body: 1rem;
-    --fontsize_label_l: 0.875rem;
-    --fontsize_label_m: 0.75rem;
-    --fontsize_label_s: 0.625rem;
+  --fontsize_display: 3rem;
+  --fontsize_headline: 1.5rem;
+  --fontsize_title: 1.25rem;
+  --fontsize_body: 1rem;
+  --fontsize_label_l: 0.875rem;
+  --fontsize_label_m: 0.75rem;
+  --fontsize_label_s: 0.625rem;
 
-    --p1: 4px;
-    --p2: 8px;
-    --p3: 16px;
-    --p4: 24px;
-    --p5: 32px;
-    --p6: 48px;
+  --p1: 4px;
+  --p2: 8px;
+  --p3: 16px;
+  --p4: 24px;
+  --p5: 32px;
+  --p6: 48px;
 }
 
 h1 {
-    font-size: var(--fontsize_display);
-    font-weight: bold;
+  font-size: var(--fontsize_display);
+  font-weight: bold;
 }
 h2 {
-    font-size: var(--fontsize_headline);
-    font-weight: bold;
+  font-size: var(--fontsize_headline);
+  font-weight: bold;
 }
 h3 {
-    font-size: var(--fontsize_title);
-    font-weight: bold;
+  font-size: var(--fontsize_title);
+  font-weight: bold;
 }
 h4 {
-    font-size: var(--fontsize_title);
-    font-weight: bold;
+  font-size: var(--fontsize_title);
+  font-weight: bold;
 }
 
 .font_body {
-    font-size: var(--fontsize_body);
-    font-weight: 400;
+  font-size: var(--fontsize_body);
+  font-weight: 400;
 }
 
 .font_label_m {
-    font-size: var(--fontsize_label_m);
-    font-weight: 400;
+  font-size: var(--fontsize_label_m);
+  font-weight: 400;
 }
 
 .font_label_l {
-    font-size: var(--fontsize_label_l);
-    font-weight: 400;
+  font-size: var(--fontsize_label_l);
+  font-weight: 400;
 }
 
 .font_label_s {
-    font-size: var(--fontsize_label_s);
-    font-weight: 400;
+  font-size: var(--fontsize_label_s);
+  font-weight: 400;
 }
 
 .font__dulled {
-    color: rgba(0, 0, 0, 40%);
+  color: rgba(0, 0, 0, 40%);
 }
 .font__light_dulled {
-    color: rgba(255, 255, 255, 40%);
+  color: rgba(255, 255, 255, 40%);
 }
 
 .font__bold {
-    font-weight: bold;
+  font-weight: bold;
 }
 .font__uppercase {
-    text-transform: uppercase;
+  text-transform: uppercase;
+}
+.font_text-nowrap{
+  white-space: nowrap;
 }
 
 hr {
-    border-top: var(--frame-stroke);
+  border: 0;
+  height: 1px;
+  background-color: var(--frame-stroke);
 }
