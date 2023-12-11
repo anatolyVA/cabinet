@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+}
+@media (min-width: 1440px){
+
+    .grid_left_col {
+        width: 235px;
+    }
+    .grid_right_col {
+        width: 100%;
+        background-color: var(--background-color);
+    }
+}
+@media (min-width: 1600px){
+    .grid_left_col {
+        width: 315px;
+    }
+    .grid_right_col {
+        width: 100%;
+        background-color: var(--background-color);
+    }
+}

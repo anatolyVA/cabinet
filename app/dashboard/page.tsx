@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Link from "next/link";
 import PageGreeting from "../components/PageGreeting";
@@ -27,8 +27,24 @@ function Page() {
             </section>
             <section className="right_col">
                 <div className="stat_cards">
-                    <div className="stat_card"></div>
-                    <div className="stat_card"></div>
+                    <div className="stat_card">
+                        <div className="stat_icon completed_tests"></div>
+                        <div>
+                            <span className="font_label_l font__dulled">
+                                Выполнено тестов
+                            </span>
+                            <h2>15</h2>
+                        </div>
+                    </div>
+                    <div className="stat_card">
+                        <div className="stat_icon avg_mark"></div>
+                        <div>
+                            <span className="font_label_l font__dulled">
+                                Средняя оценка
+                            </span>
+                            <h2>3.8</h2>
+                        </div>
+                    </div>
                 </div>
                 <section className="group_card">
                     <header className="card_header">
@@ -45,8 +61,7 @@ function Page() {
                             Показать всех
                         </Link>
                     </header>
-                    <main className="card_body">
-                    </main>
+                    <main className="card_body"></main>
                 </section>
             </section>
         </div>
