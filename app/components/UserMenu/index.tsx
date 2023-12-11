@@ -5,11 +5,11 @@ import Avatar from "../Avatar";
 
 function UserMenu() {
     return (
-        <div className="user_menu">
+        <div className="user-menu">
             <Avatar size={32}/>
-            <div className="user_info">
+            <div className="user-menu__info">
                 <span className="font_label_m">Евмененков Д. И.</span>
-                <span className="font_label_s font__bold font__dulled">Студент</span>
+                <span className="font_label_s font_bold font_light">Студент</span>
             </div>
         </div>
     );

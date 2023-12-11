@@ -14,19 +14,19 @@ let user = {
 
 function PageGreeting() {
     return (
-        <div className="page_greeting">
-            <section className="page_greeting_left">
+        <div className="page-greeting">
+            <section className="page-greeting__left">
                 <header>
                     <h3>Добрый день, {user.name}</h3>
                 </header>
                 <main className="notifications">
-                    <div className="notification font_label_l font__light_dulled">
+                    <div className="notification font_label_l font_light_white">
                         <Chat size={18} />
                         <span>
                             {user.messages} новых сообщений
                         </span>
                     </div>
-                    <div className="notification font_label_l font__light_dulled">
+                    <div className="notification font_label_l font_light_white">
                         <Files size={18} />
                         <span>
                             {user.availableTest} доступных тестов
@@ -34,12 +34,12 @@ function PageGreeting() {
                     </div>
                 </main>
             </section>
-            <section className="page_greeting_right">
+            <section className="page-greeting__right">
                 <span className="font_body font_text-nowrap">20 декабря, 2023 г.</span>
-                <span className="font_body font__bold font__light_dulled">
+                <span className="font_body font_bold font_light_white">
                     Среда
                 </span>
-                <img className="image_exams" src="Exams.png"></img>
+                <img className="illustration_exams" src="Exams.png"></img>
             </section>
         </div>
     );

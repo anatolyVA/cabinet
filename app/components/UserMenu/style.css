@@ -1,4 +1,4 @@
-.user_menu {
+.user-menu {
     display: flex;
     cursor: pointer;
     text-decoration: none;
@@ -12,12 +12,12 @@
     gap: 8px;
 }
 
-.user_menu:hover {
+.user-menu:hover {
     background-color: var(--tonal);
     border-color: var(--tonal)
 }
 
-.user_info {
+.user-menu__info {
     display: flex;
     flex-direction: column;
 }

@@ -9,10 +9,10 @@ import Link from "next/link";
 function Header() {
     return (
         <header className="header">
-            <div className="header_left">
+            <div className="header__left">
                 <h3>Главная</h3>
             </div>
-            <div className="header_right">
+            <div className="header__right">
                 <Button
                     disabled={true}
                     className="button button_outlined button_icon_medium"

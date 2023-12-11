@@ -9,15 +9,16 @@
   max-height: 100vh;
 
 }
+.grid_right_col {
+  background-color: var(--background-color);
+}
 
 @media (min-width: 1440px) {
   .grid_right_col {
-    background-color: var(--background-color);
   }
 }
 
 @media (min-width: 1600px) {
   .grid_right_col {
-    background-color: var(--background-color);
   }
 }

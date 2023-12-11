@@ -1,4 +1,4 @@
-.sidebar {
+.side-bar {
   display: flex;
   flex-direction: column;
   background: #fff;
@@ -14,7 +14,7 @@
 @media screen and (min-width: 1600px) {
 }
 
-.sidebar_header {
+.side-bar__header {
   display: flex;
   padding: 0 56px;
   min-height: 80px;
@@ -22,7 +22,7 @@
   align-items: center;
 }
 
-.sidebar_body {
+.side-bar__body {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -34,22 +34,25 @@
   overflow: hidden;
   overflow-y: scroll;
 }
-
-.navgroup {
+.nav-group {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.navgroup_header {
+.nav-group__header span {
   padding: 0px var(--p4);
+  font-size: var(--fontsize_label_m);
+  color: rgba(0, 0, 0, 40%);
+  font-weight: bold;
+  text-transform: uppercase;
 }
-.navgroup_buttons {
+.nav-group__buttons {
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
 
-.sidebar_footer {
+.side-bar__footer {
   display: flex;
   gap: 16px;
   flex-direction: column;

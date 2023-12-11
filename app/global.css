@@ -80,17 +80,17 @@ h4 {
   font-weight: 400;
 }
 
-.font__dulled {
+.font_light {
   color: rgba(0, 0, 0, 40%);
 }
-.font__light_dulled {
+.font_light_white {
   color: rgba(255, 255, 255, 40%);
 }
 
-.font__bold {
+.font_bold {
   font-weight: bold;
 }
-.font__uppercase {
+.font_uppercase {
   text-transform: uppercase;
 }
 .font_text-nowrap{

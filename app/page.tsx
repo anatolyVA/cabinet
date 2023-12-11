@@ -14,7 +14,7 @@ export default function Page() {
                 <form className="form">
                     <header className="form_header">
                         <h1>Вход</h1>
-                        <span className="font_body font__bold font__dulled">
+                        <span className="font_body font_bold font_light">
                             Заполните форму, чтобы войти в личный кабинет
                         </span>
                     </header>
@@ -29,7 +29,7 @@ export default function Page() {
                             className="input"
                         ></Input>
                         <CheckBox
-                            labelClassname="font_label_m font__dulled"
+                            labelClassname="font_label_m font_light"
                             id="d"
                             label="Запомнить меня"
                         />
@@ -46,7 +46,7 @@ export default function Page() {
             <section className="scenery_frame">
                 <header className="form_header">
                     <h1>Добро пожаловать!</h1>
-                    <span className="font_body font__bold font__dulled">
+                    <span className="font_body font_bold font_light">
                         Заполните форму, чтобы войти в личный кабинет
                     </span>
                 </header>

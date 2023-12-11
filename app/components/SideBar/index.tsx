@@ -26,13 +26,13 @@ type Props = {
 function StudentRendering({ path }: Props) {
     return (
         <>
-            <section className="navgroup">
-                <header className="navgroup_header">
-                    <span className="font_label_m font__bold font__uppercase font__dulled">
+            <section className="nav-group">
+                <header className="nav-group__header">
+                    <span>
                         Образование
                     </span>
                 </header>
-                <main className="navgroup_buttons">
+                <main className="nav-group__buttons">
                     <Link
                         href="/tests"
                         className={`button button_sidebar button_medium ${
@@ -51,13 +51,13 @@ function StudentRendering({ path }: Props) {
                     </Button>
                 </main>
             </section>
-            <section className="navgroup">
-                <header className="navgroup_header">
-                    <span className="font_label_m font__bold font__uppercase font__dulled">
+            <section className="nav-group">
+                <header className="nav-group__header">
+                    <span>
                         Сообщество
                     </span>
                 </header>
-                <main className="navgroup_buttons">
+                <main className="nav-group__buttons">
                     <Link
                         href="/group"
                         className={`button button_sidebar button_medium ${
@@ -89,13 +89,13 @@ function StudentRendering({ path }: Props) {
 function InstructorRendering({ path }: Props) {
     return (
         <>
-            <section className="navgroup">
-                <header className="navgroup_header">
-                    <span className="font_label_m font__bold font__uppercase font__dulled">
+            <section className="nav-group">
+                <header className="nav-group__header">
+                    <span>
                         Образование
                     </span>
                 </header>
-                <main className="navgroup_buttons">
+                <main className="nav-group__buttons">
                     <Link
                         href="/tests"
                         className={`button button_sidebar button_medium ${
@@ -114,9 +114,9 @@ function InstructorRendering({ path }: Props) {
                     </Button>
                 </main>
             </section>
-            <section className="navgroup">
-                <header className="navgroup_header">
-                    <span className="font_label_m font__bold font__uppercase font__dulled">
+            <section className="nav-group">
+                <header className="nav-group__header">
+                    <span>
                         Сообщество
                     </span>
                 </header>
@@ -145,9 +145,9 @@ function InstructorRendering({ path }: Props) {
 function ModeratorRendering({ path }: Props) {
     return (
         <>
-            <section className="navgroup">
-                <header className="navgroup_header">
-                    <span className="font_label_m font__bold font__uppercase font__dulled">
+            <section className="nav-group">
+                <header className="nav-group__header">
+                    <span>
                         Образование
                     </span>
                 </header>
@@ -174,7 +174,7 @@ function ModeratorRendering({ path }: Props) {
             </section>
             <section className="navgroup">
                 <header className="navgroup_header">
-                    <span className="font_label_m font__bold font__uppercase font__dulled">
+                    <span>
                         Сообщество
                     </span>
                 </header>
@@ -206,11 +206,11 @@ function SideBar() {
     const [userRole, setUserRole] = React.useState("student");
     const path = usePathname();
     return (
-        <aside className="sidebar">
-            <header className="sidebar_header">
+        <aside className="side-bar">
+            <header className="side-bar__header">
                 <h2>СКТ ЛК</h2>
             </header>
-            <main className="sidebar_body">
+            <main className="side-bar__body">
                 <Link
                     href="/dashboard"
                     className={`button button_sidebar button_medium ${
@@ -226,10 +226,10 @@ function SideBar() {
                     <InstructorRendering path={path} />
                 )}
             </main>
-            <footer className="sidebar_footer">
+            <footer className="side-bar__footer">
                 <section className="support">
                     <img src="ServerDown.png"></img>
-                    <span className="font_body font__bold font__dulled">
+                    <span className="font_body font_bold font_light">
                         Возникла проблема?
                     </span>
                     <Button className="button button_outlined button_medium">

@@ -1,4 +1,4 @@
-.page_greeting {
+.page-greeting {
   display: grid;
   grid-template-columns: 80% 20%;
   height: 150px;
@@ -9,7 +9,7 @@
   background: linear-gradient(92deg, #801ab0 0%, #1a3bb0 100%);
   color: #fff;
 }
-.page_greeting_left {
+.page-greeting__left {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -26,18 +26,18 @@
   gap: 4px;
 }
 
-.notifications__none {
+.notifications_none {
   display: none;
 }
 
-.page_greeting_right {
+.page-greeting__right {
   display: flex;
   flex-direction: column;
   align-items: end;
   position: relative;
   gap: 8px;
 }
-.image_exams {
+.illustration_exams {
   position: absolute;
   bottom: -32px;
   right: 120px;
